@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinigami | Skirk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Efek Latar Belakang -->
+    <div class="stars"></div>
+    <div class="ice-particles"></div>
+    <div class="ice-shards"></div>
+    <canvas id="iceCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">SHINIGAMI</span>
+                <div class="logo-ice"></div>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#education" class="nav-link" data-section="education">Education</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="ice-text">Skirk</span>
+                        <span class="glow-text">ABYSS</span>
+                    </h1>
+                    <p class="hero-subtitle">Ice Sovereign • Web Developer • Digital Creator</p>
+                    <p class="hero-description">
+                        Menguasai seni pemrograman dengan keanggunan es abadi
+                    </p>
+                    <button class="cta-button" id="ultimateBtn">
+                        <span>Activate Ultimate</span>
+                        <div class="ice-burst"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="character-image">
+                <div class="character-frame">
+                    <img src="img/Skirk.jpg" alt="Abyss Princess" class="char-img">
+                    <div class="ice-overlay"></div>
+                    <div class="ice-particles-char"></div>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="crystal-formation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="ice-border">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="profile-card">
+                        <img src="img/skirk-abyss.jpg" alt="Profile" class="profile-img">
+                        <div class="profile-overlay"></div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-ice-frame">
+                        <p class="about-text">
+                            Saya adalah seorang developer yang berdedikasi dengan passion dalam menciptakan 
+                            pengalaman digital yang memukau. Seperti es yang kokoh namun indah, saya percaya 
+                            bahwa kode yang baik haruslah kuat sekaligus elegan.
+                        </p>
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <div class="skill-icon">❄️</div>
+                                <div class="skill-info">
+                                    <h3>Frontend Development</h3>
+                                    <p>HTML, CSS, JavaScript, React</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">💎</div>
+                                <div class="skill-info">
+                                    <h3>UI/UX Design</h3>
+                                    <p>Figma, Adobe XD, Animation</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔮</div>
+                                <div class="skill-info">
+                                    <h3>Backend Development</h3>
+                                    <p>Node.js, Python, Database</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="ice-border">Education</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-ice"></div>
+                    <div class="timeline-content">
+                        <h3>Universitas Teknologi Ice Kingdom</h3>
+                        <span class="timeline-date">2020 - 2024</span>
+                        <p>Bachelor of Computer Science - GPA: 3.85/4.00</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ice"></div>
+                    <div class="timeline-content">
+                        <h3>SMA Negeri Abyss</h3>
+                        <span class="timeline-date">2017 - 2020</span>
+                        <p>Jurusan IPA - Nilai Rata-rata: 95/100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="ice-border">Experience</span>
+            </h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Senior Frontend Developer</h3>
+                        <span class="exp-date">2023 - Present</span>
+                    </div>
+                    <h4>Frozen Tech Solutions</h4>
+                    <p>Memimpin tim pengembangan aplikasi web dengan teknologi modern dan menciptakan antarmuka pengguna yang responsif dan interaktif.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Full Stack Developer</h3>
+                        <span class="exp-date">2021 - 2023</span>
+                    </div>
+                    <h4>Crystal Digital Agency</h4>
+                    <p>Mengembangkan aplikasi web full-stack dengan fokus pada performa dan user experience yang optimal.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Web Developer Intern</h3>
+                        <span class="exp-date">2020 - 2021</span>
+                    </div>
+                    <h4>Ice Innovations</h4>
+                    <p>Belajar dan berkontribusi dalam proyek-proyek web development dengan mentor berpengalaman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="ice-border">Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/1.jpg" alt="Project 1" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ice E-Commerce Platform</h3>
+                        <p>Platform e-commerce modern dengan fitur real-time dan payment gateway terintegrasi.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/2.jpg" alt="Project 2" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crystal Dashboard</h3>
+                        <p>Dashboard analytics dengan visualisasi data interaktif dan real-time monitoring.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/3.jpg" alt="Project 3" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Abyss Social Network</h3>
+                        <p>Platform media sosial dengan fitur chatting real-time dan content sharing.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>GraphQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="ice-border">Contact</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Terhubung</h3>
+                    <p>Jangan ragu untuk menghubungi saya untuk kolaborasi atau pertanyaan.</p>
+                    <div class="contact-links">
+                        <a href="mailto:abyss@example.com" class="contact-link">
+                            <span class="icon">📧</span>
+                            <span>abyss@example.com</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="icon">💼</span>
+                            <span>linkedin.com/in/abyss</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="icon">🐙</span>
+                            <span>github.com/abyss</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan" rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Kirim Pesan</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Shinigami. Crafted with ice and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
